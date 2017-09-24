@@ -26,6 +26,7 @@
             getCustomersSummary();
         };
 
+        //deleting the customer
         vm.deleteCustomer = function (id) {
             if (!authService.user.isAuthenticated) {
                 $location.path(authService.loginPath + $location.$$path);
