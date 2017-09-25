@@ -23,6 +23,7 @@
                 });
         };
 
+        //checking the unique value api
         factory.checkUniqueValue = function (id, property, value) {
             if (!id) id = 0;
             return $http.get(serviceBase + 'checkUnique/' + id + '?property=' + property + '&value=' + escape(value)).then(
