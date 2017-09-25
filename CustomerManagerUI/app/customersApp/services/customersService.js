@@ -15,6 +15,7 @@
             return getPagedResource('getCustomersSummary', pageIndex, pageSize);
         };
 
+        //get the states - calling the api
         factory.getStates = function () {
             return $http.get(serviceBase + 'states').then(
                 function (results) {
